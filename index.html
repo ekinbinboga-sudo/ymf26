@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YMF 2026 – Yoğun Madde Fiziği İzmir Toplantısı</title>
+  <meta name="description" content="Yoğun Madde Fiziği İzmir Toplantısı 2026 – İzmir Ekonomi Üniversitesi ev sahipliğinde gerçekleşecek yıllık yoğun madde fiziği toplantısı." />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="YMF 2026 – Yoğun Madde Fiziği İzmir Toplantısı" />
+  <meta property="og:description" content="Türkiye'nin yoğun madde fiziği araştırmacılarını bir araya getiren geleneksel yıllık toplantı." />
+  <meta property="og:type"        content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- =============================================
+     NAVİGASYON
+     ============================================= -->
+<nav id="site-nav">
+  <a class="nav-logo" href="#hero">
+    <!-- İEÜ logosu: assets/images/ieu-logo.png dosyasını koyunca
+         aşağıdaki img etiketi görünür hale gelir.
+         Şimdi sadece metin gösteriliyor. -->
+    <!-- <img class="nav-logo-img" src="assets/images/ieu-logo.png" alt="İEÜ" /> -->
+    <span class="nav-logo-text">YMF 2026</span>
+  </a>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#duyuru">Duyuru</a></li>
+    <li><a href="#konusmaci">Konuşmacılar</a></li>
+    <li><a href="#program">Program</a></li>
+    <li><a href="#kayit">Kayıt</a></li>
+    <li><a href="#gecmis">Geçmiş YMF</a></li>
+    <li><a href="#iletisim">İletişim</a></li>
+    <li><a href="#sponsorlar">Sponsorlar</a></li>
+  </ul>
+
+  <button class="hamburger" id="hamburger" aria-label="Menüyü aç/kapat">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<!-- =============================================
+     HERO
+     ============================================= -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+
+  <span class="hero-badge">İzmir Ekonomi Üniversitesi · Fizik Bölümü</span>
+
+  <h1 class="hero-title">
+    Yoğun Madde Fiziği<br>
+    <span>İzmir Toplantısı 2026</span>
+  </h1>
+
+  <p class="hero-sub">
+    Türkiye'nin yoğun madde fiziği camiasını bir araya getiren geleneksel yıllık toplantı.
+  </p>
+
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <div class="label">Tarih</div>
+      <!-- ▶ DÜZENLE: Tarih belli olunca buraya yazın -->
+      <div class="value">TBA 2026</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-meta-item">
+      <div class="label">Yer</div>
+      <div class="value">İzmir, Türkiye</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-meta-item">
+      <div class="label">Ev Sahibi</div>
+      <div class="value">İEÜ Fizik</div>
+    </div>
+  </div>
+
+  <div class="hero-cta">
+    <a href="#kayit"   class="btn-primary">Kayıt Ol</a>
+    <a href="#program" class="btn-outline">Programa Bak</a>
+  </div>
+
+  <div class="scroll-hint">Aşağı kaydırın</div>
+</section>
+
+
+<!-- =============================================
+     DUYURU / TOPLANTI HAKKINDA
+     ▶ Düzenlenebilir içerik bu bölümde.
+     ============================================= -->
+<section id="duyuru">
+  <div class="section-inner">
+    <div class="section-tag">Genel Bilgi</div>
+    <h2 class="section-title">Toplantı Hakkında</h2>
+    <div class="section-line"></div>
+    <p class="section-body">
+      Yoğun Madde Fiziği İzmir Toplantısı, Türkiye'deki yoğun madde fiziği
+      araştırmacılarını bir araya getiren geleneksel ve saygın bir platform olmaya
+      devam etmektedir. Bu yıl İzmir Ekonomi Üniversitesi ev sahipliğinde
+      gerçekleşecek olan YMF 2026, teorik ve deneysel çalışmaların paylaşıldığı
+      açık ve kapsayıcı bir ortam sunmaktadır.
+    </p>
+
+    <div class="announce-grid">
+
+      <div class="announce-card">
+        <div class="card-icon">📅</div>
+        <div class="card-title">Önemli Tarihler</div>
+        <!-- ▶ DÜZENLE: Tarihler belli olunca güncelleyin -->
+        <div class="card-text">
+          Soyut/özet gönderimi, kayıt son tarihleri ve program ilanı için
+          güncellemeleri takip ediniz. Tarihler yakında duyurulacaktır.
+        </div>
+      </div>
+
+      <div class="announce-card">
+        <div class="card-icon">📍</div>
+        <div class="card-title">Konum</div>
+        <div class="card-text">
+          İzmir Ekonomi Üniversitesi, Balçova, İzmir.
+          Şehir merkezine kolay ulaşım imkânı mevcuttur; konaklama önerileri
+          için iletişim bölümüne bakınız.
+        </div>
+      </div>
+
+      <div class="announce-card">
+        <div class="card-icon">🎓</div>
+        <div class="card-title">Kapsam</div>
+        <div class="card-text">
+          Süperiletkenlik, manyetik malzemeler, topolojik sistemler,
+          düşük boyutlu yapılar, hesaplamalı yoğun madde ve ilgili alanlarda
+          teorik ve deneysel çalışmalar.
+        </div>
+      </div>
+
+      <div class="announce-card">
+        <div class="card-icon">📝</div>
+        <div class="card-title">Soyut Gönderimi</div>
+        <div class="card-text">
+          Sözlü sunum ve poster bildiri özetleri kısa bir süre içinde kabul
+          edilmeye başlanacaktır. Şablon ve talimatlar ilerleyen günlerde
+          yayımlanacaktır.
+        </div>
+      </div>
+
+    </div><!-- /.announce-grid -->
+  </div>
+</section>
+
+
+<!-- =============================================
+     KONUŞMACILAR
+     ▶ Her konuşmacı için bir .speaker-card bloğu kopyalayın.
+     ▶ speaker-avatar içine fotoğraf src ekleyin veya baş harfleri bırakın.
+     ============================================= -->
+<section id="konusmaci">
+  <div class="section-inner">
+    <div class="section-tag">Davetli Konuşmacılar</div>
+    <h2 class="section-title">Konuşmacılar</h2>
+    <div class="section-line"></div>
+
+    <span class="speakers-note">
+      ⏳ Konuşmacı listesi oluşturulma aşamasındadır — yakında ilan edilecektir.
+    </span>
+
+    <div class="speakers-grid">
+
+      <!-- ── Konuşmacı 1 ── -->
+      <div class="speaker-card">
+        <div class="speaker-avatar">?</div>
+        <!-- Fotoğraf eklemek için:
+        <div class="speaker-avatar">
+          <img src="assets/images/speakers/ad-soyad.jpg" alt="Ad Soyad" />
+        </div>
+        -->
+        <div class="speaker-name">Davetli Konuşmacı</div>
+        <div class="speaker-aff">Üniversite / Kurum</div>
+        <div class="speaker-tba">Yakında duyurulacak</div>
+      </div>
+
+      <!-- ── Konuşmacı 2 ── -->
+      <div class="speaker-card">
+        <div class="speaker-avatar">?</div>
+        <div class="speaker-name">Davetli Konuşmacı</div>
+        <div class="speaker-aff">Üniversite / Kurum</div>
+        <div class="speaker-tba">Yakında duyurulacak</div>
+      </div>
+
+      <!-- ── Konuşmacı 3 ── -->
+      <div class="speaker-card">
+        <div class="speaker-avatar">?</div>
+        <div class="speaker-name">Davetli Konuşmacı</div>
+        <div class="speaker-aff">Üniversite / Kurum</div>
+        <div class="speaker-tba">Yakında duyurulacak</div>
+      </div>
+
+      <!-- ── Konuşmacı 4 ── -->
+      <div class="speaker-card">
+        <div class="speaker-avatar">?</div>
+        <div class="speaker-name">Davetli Konuşmacı</div>
+        <div class="speaker-aff">Üniversite / Kurum</div>
+        <div class="speaker-tba">Yakında duyurulacak</div>
+      </div>
+
+    </div><!-- /.speakers-grid -->
+
+    <p style="margin-top:2rem; font-size:0.85rem; color:var(--muted);">
+      Konuşmacı olmak veya öneride bulunmak için
+      <a href="#iletisim" style="color:var(--accent); text-decoration:none;">iletişime geçiniz</a>.
+    </p>
+  </div>
+</section>
+
+
+<!-- =============================================
+     PROGRAM
+     ▶ Tek günlük program taslağı.
+     ▶ Saatleri ve başlıkları güncellemek için .prog-row satırlarını düzenleyin.
+     ▶ prog-type sınıfları: davet | sozlu | poster | break | kapanis
+     ============================================= -->
+<section id="program">
+  <div class="section-inner">
+    <div class="section-tag">Etkinlik Takvimi</div>
+    <h2 class="section-title">Program</h2>
+    <div class="section-line"></div>
+    <p class="section-body" style="margin-bottom:2rem;">
+      Aşağıdaki program taslak niteliğindedir; kesin program onaylı konuşmacı
+      listesiyle birlikte duyurulacaktır.
+    </p>
+
+    <div class="program-timeline">
+
+      <div class="prog-row">
+        <div class="prog-time">09:00 – 09:30</div>
+        <div>
+          <div class="prog-event-title">Açılış &amp; Kayıt</div>
+          <div class="prog-event-detail">Düzenleme Kurulu Karşılama Konuşması</div>
+        </div>
+      </div>
+
+      <div class="prog-row">
+        <div class="prog-time">09:30 – 10:30</div>
+        <div>
+          <span class="prog-type davet">Davetli</span>
+          <div class="prog-event-title">Açılış Konuşması</div>
+          <div class="prog-event-detail">TBA · Davetli Konuşmacı</div>
+        </div>
+      </div>
+
+      <div class="prog-row break-row">
+        <div class="prog-time">10:30 – 11:00</div>
+        <div>
+          <span class="prog-type break">Ara</span>
+          <div class="prog-event-title">Kahve Molası &amp; Poster Görüntüleme</div>
+        </div>
+      </div>
+
+      <div class="prog-row">
+        <div class="prog-time">11:00 – 12:30</div>
+        <div>
+          <span class="prog-type sozlu">Sözlü</span>
+          <div class="prog-event-title">Sözlü Sunumlar I</div>
+          <div class="prog-event-detail">Süperiletkenlik ve Manyetik Sistemler</div>
+        </div>
+      </div>
+
+      <div class="prog-row break-row">
+        <div class="prog-time">12:30 – 14:00</div>
+        <div>
+          <span class="prog-type break">Ara</span>
+          <div class="prog-event-title">Öğle Yemeği</div>
+        </div>
+      </div>
+
+      <div class="prog-row">
+        <div class="prog-time">14:00 – 15:00</div>
+        <div>
+          <span class="prog-type davet">Davetli</span>
+          <div class="prog-event-title">Davetli Konuşma II</div>
+          <div class="prog-event-detail">TBA · Davetli Konuşmacı</div>
+        </div>
+      </div>
+
+      <div class="prog-row">
+        <div class="prog-time">15:00 – 17:00</div>
+        <div>
+          <span class="prog-type sozlu">Sözlü</span>
+          <div class="prog-event-title">Sözlü Sunumlar II</div>
+          <div class="prog-event-detail">Topolojik Sistemler ve Düşük Boyutlu Yapılar</div>
+        </div>
+      </div>
+
+      <div class="prog-row">
+        <div class="prog-time">17:00 – 19:00</div>
+        <div>
+          <span class="prog-type poster">Poster</span>
+          <div class="prog-event-title">Poster Oturumu</div>
+          <div class="prog-event-detail">Tüm poster sunumları</div>
+        </div>
+      </div>
+
+      <div class="prog-row">
+        <div class="prog-time">19:00 – 19:30</div>
+        <div>
+          <span class="prog-type kapanis">Kapanış</span>
+          <div class="prog-event-title">Kapanış Konuşması &amp; Ödüller</div>
+          <div class="prog-event-detail">Düzenleme Kurulu</div>
+        </div>
+      </div>
+
+    </div><!-- /.program-timeline -->
+
+    <div class="prog-note">
+      Program taslak niteliğindedir; kesin saatler ve oturum başlıkları güncellenebilir.
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     KAYIT
+     ▶ Google Form hazır olunca:
+       1) iframe src="" içine form bağlantısını yapıştırın
+       2) "Formu Ayrı Sekmede Aç" bağlantısının href=""'ini de güncelleyin
+     ============================================= -->
+<section id="kayit">
+  <div class="section-inner">
+    <div class="section-tag">Katılım</div>
+    <h2 class="section-title">Kayıt</h2>
+    <div class="section-line"></div>
+    <p class="section-body">
+      Aşağıdaki formu doldurarak kayıt başvurusunda bulunabilirsiniz.
+    </p>
+
+    <div class="kayit-free-badge">
+      ✓ Katılım ücretsizdir
+    </div>
+
+    <div class="kayit-form-wrapper">
+      <div class="kayit-form-header">
+        <div class="kayit-form-title">YMF 2026 Kayıt Formu</div>
+        <!-- ▶ DÜZENLE: Google Form URL'si -->
+        <a href=""
+           target="_blank" rel="noopener"
+           style="font-size:0.82rem; color:var(--accent); text-decoration:none;">
+          Formu Ayrı Sekmede Aç ↗
+        </a>
+      </div>
+      <div class="kayit-form-body">
+        <div class="kayit-iframe-container">
+          <!--
+            ▶ DÜZENLE: Google Form embed bağlantısını src="" içine yapıştırın.
+            Örnek:
+            src="https://docs.google.com/forms/d/e/FORMID/viewform?embedded=true"
+          -->
+          <iframe
+            src=""
+            title="YMF 2026 Kayıt Formu"
+            allowfullscreen>
+            Tarayıcınız iframe desteklemiyor.
+            <a href="" target="_blank">Formu buradan açın</a>.
+          </iframe>
+        </div>
+        <div class="kayit-fallback">
+          Form yüklenmiyor mu? →
+          <a href="" target="_blank" rel="noopener">
+            Formu ayrı sekmede açın
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =============================================
+     GEÇMİŞ YMF TOPLANTILARI
+     ▶ Fotoğraf eklemek için .gallery-item içindeki .gallery-placeholder
+       yerine <img src="assets/images/gallery/dosya.jpg" alt="..."> koyun.
+     ============================================= -->
+<section id="gecmis">
+  <div class="section-inner">
+    <div class="section-tag">Arşiv</div>
+    <h2 class="section-title">Geçmiş Toplantılar</h2>
+    <div class="section-line"></div>
+    <p class="section-body">
+      YMF'nin geçmiş yıllardaki toplantılarına ait web sitelerine
+      aşağıdaki bağlantılardan ulaşabilirsiniz.
+    </p>
+
+    <div class="gecmis-grid">
+
+      <a href="https://ymf.iyte.edu.tr/" target="_blank" rel="noopener" class="gecmis-card">
+        <div class="gecmis-year">2025</div>
+        <div class="gecmis-host">İzmir</div>
+        <div class="gecmis-arrow">↗</div>
+      </a>
+
+      <a href="https://physics.ieu.edu.tr/ymf2024/" target="_blank" rel="noopener" class="gecmis-card">
+        <div class="gecmis-year">2024</div>
+        <div class="gecmis-host">İzmir</div>
+        <div class="gecmis-arrow">↗</div>
+      </a>
+
+      <a href="https://ymf.iyte.edu.tr/ymf-2023/" target="_blank" rel="noopener" class="gecmis-card">
+        <div class="gecmis-year">2023</div>
+        <div class="gecmis-host">İzmir</div>
+        <div class="gecmis-arrow">↗</div>
+      </a>
+
+      <a href="https://ymf.iyte.edu.tr/ymf-2022/" target="_blank" rel="noopener" class="gecmis-card">
+        <div class="gecmis-year">2022</div>
+        <div class="gecmis-host">İzmir</div>
+        <div class="gecmis-arrow">↗</div>
+      </a>
+
+      <a href="http://ymf.ankara.edu.tr/" target="_blank" rel="noopener" class="gecmis-card">
+        <div class="gecmis-year">2020</div>
+        <div class="gecmis-host">Ankara</div>
+        <div class="gecmis-arrow">↗</div>
+      </a>
+
+      <a href="https://ymf.iyte.edu.tr/ymf-2019/" target="_blank" rel="noopener" class="gecmis-card">
+        <div class="gecmis-year">2019</div>
+        <div class="gecmis-host">İzmir</div>
+        <div class="gecmis-arrow">↗</div>
+      </a>
+
+      <a href="https://ymf.iyte.edu.tr/2018-2/" target="_blank" rel="noopener" class="gecmis-card">
+        <div class="gecmis-year">2018</div>
+        <div class="gecmis-host">İzmir</div>
+        <div class="gecmis-arrow">↗</div>
+      </a>
+
+      <a href="https://ymf.iyte.edu.tr/ymf-2017/" target="_blank" rel="noopener" class="gecmis-card">
+        <div class="gecmis-year">2017</div>
+        <div class="gecmis-host">İzmir</div>
+        <div class="gecmis-arrow">↗</div>
+      </a>
+
+      <a href="https://ymf.iyte.edu.tr/ymf-2016/" target="_blank" rel="noopener" class="gecmis-card">
+        <div class="gecmis-year">2016</div>
+        <div class="gecmis-host">İzmir</div>
+        <div class="gecmis-arrow">↗</div>
+      </a>
+
+      <a href="https://ymf.iyte.edu.tr/ymf-2015/" target="_blank" rel="noopener" class="gecmis-card">
+        <div class="gecmis-year">2015</div>
+        <div class="gecmis-host">İzmir</div>
+        <div class="gecmis-arrow">↗</div>
+      </a>
+
+      <a href="https://ymf.iyte.edu.tr/ymf-2014/" target="_blank" rel="noopener" class="gecmis-card">
+        <div class="gecmis-year">2014</div>
+        <div class="gecmis-host">İzmir</div>
+        <div class="gecmis-arrow">↗</div>
+      </a>
+
+      <a href="https://ymf2013.iyte.edu.tr/" target="_blank" rel="noopener" class="gecmis-card">
+        <div class="gecmis-year">2013</div>
+        <div class="gecmis-host">İzmir</div>
+        <div class="gecmis-arrow">↗</div>
+      </a>
+
+      <a href="https://ymf2012.iyte.edu.tr/" target="_blank" rel="noopener" class="gecmis-card">
+        <div class="gecmis-year">2012</div>
+        <div class="gecmis-host">İzmir</div>
+        <div class="gecmis-arrow">↗</div>
+      </a>
+
+    </div><!-- /.gecmis-grid -->
+
+    <!-- ── Fotoğraf Galerisi ── -->
+    <div class="gallery-section">
+      <div class="gallery-title">Önceki Toplantıdan Fotoğraflar</div>
+      <p class="gallery-sub">
+        YMF 2024 · İzmir Ekonomi Üniversitesi
+        <!-- ▶ DÜZENLE: Hangi toplantıya ait olduğunu güncelleyin -->
+      </p>
+
+      <div class="gallery-grid">
+
+        <!-- ── Fotoğraf 1 ──
+             ▶ Fotoğraf eklemek için placeholder div'i silin,
+               <img src="assets/images/gallery/foto1.jpg" alt="YMF 2024"> ekleyin
+        -->
+        <div class="gallery-item" data-src="assets/images/gallery/ymf2024-1.jpg">
+          <div class="gallery-placeholder">
+            <div class="ph-icon">📷</div>
+            <div>Fotoğraf eklenecek<br><small>assets/images/gallery/</small></div>
+          </div>
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+
+        <!-- ── Fotoğraf 2 ── -->
+        <div class="gallery-item" data-src="assets/images/gallery/ymf2024-2.jpg">
+          <div class="gallery-placeholder">
+            <div class="ph-icon">📷</div>
+            <div>Fotoğraf eklenecek<br><small>assets/images/gallery/</small></div>
+          </div>
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+
+        <!-- ── Fotoğraf 3 ── -->
+        <div class="gallery-item" data-src="assets/images/gallery/ymf2024-3.jpg">
+          <div class="gallery-placeholder">
+            <div class="ph-icon">📷</div>
+            <div>Fotoğraf eklenecek<br><small>assets/images/gallery/</small></div>
+          </div>
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+
+        <!-- ── Fotoğraf 4 ── -->
+        <div class="gallery-item" data-src="assets/images/gallery/ymf2024-4.jpg">
+          <div class="gallery-placeholder">
+            <div class="ph-icon">📷</div>
+            <div>Fotoğraf eklenecek<br><small>assets/images/gallery/</small></div>
+          </div>
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+
+      </div><!-- /.gallery-grid -->
+    </div><!-- /.gallery-section -->
+
+  </div>
+</section>
+
+
+<!-- =============================================
+     İLETİŞİM
+     ▶ E-posta ve komite üyelerini güncelleyin.
+     ============================================= -->
+<section id="iletisim">
+  <div class="section-inner">
+    <div class="section-tag">İletişim</div>
+    <h2 class="section-title">Bize Ulaşın</h2>
+    <div class="section-line"></div>
+
+    <div class="contact-grid">
+
+      <div class="contact-block">
+
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-label">E-posta</div>
+            <div class="contact-val">
+              <!-- ▶ DÜZENLE: Gerçek e-posta adresi -->
+              <a href="mailto:ymf2026@ieu.edu.tr">ymf2026@ieu.edu.tr</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🏛️</div>
+          <div>
+            <div class="contact-label">Ev Sahibi Kurum</div>
+            <div class="contact-val">
+              İzmir Ekonomi Üniversitesi<br>
+              Fen Edebiyat Fakültesi, Fizik Bölümü<br>
+              Sakarya Cad. No:156, Balçova – İzmir
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🌐</div>
+          <div>
+            <div class="contact-label">Web</div>
+            <div class="contact-val">
+              <a href="https://physics.ieu.edu.tr" target="_blank" rel="noopener">
+                physics.ieu.edu.tr
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">👥</div>
+          <div>
+            <div class="contact-label">Düzenleme Kurulu</div>
+            <!-- ▶ DÜZENLE: Komite üyelerini ekleyin -->
+            <div class="contact-val">
+              Üyeler yakında duyurulacaktır.<br>
+              <a href="mailto:ymf2026@ieu.edu.tr">Komiteye ulaşın →</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.contact-block -->
+
+      <div>
+        <!-- Google Maps embed (opsiyonel) -->
+        <div class="map-placeholder">
+          <div class="map-icon">📍</div>
+          <div class="map-name">İzmir Ekonomi Üniversitesi</div>
+          <div>Balçova, İzmir</div>
+          <a href="https://maps.google.com/?q=İzmir+Ekonomi+Üniversitesi"
+             target="_blank" rel="noopener"
+             style="margin-top:0.5rem; color:var(--accent); font-size:0.82rem; text-decoration:none;">
+            Google Maps'te Aç →
+          </a>
+        </div>
+        <!--
+          ▶ Harita eklemek için yukarıdaki .map-placeholder div'ini silin
+            ve aşağıdaki bloğun başındaki yorum işaretini kaldırın:
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=..."
+              allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        -->
+      </div>
+
+    </div><!-- /.contact-grid -->
+  </div>
+</section>
+
+
+<!-- =============================================
+     SPONSORLAR
+     ▶ Sponsor logoları assets/images/sponsors/ klasörüne koyun.
+     ▶ Her sponsor için bir .sponsor-card bloğu kopyalayın.
+     ▶ .sponsor-card-placeholder div'ini <img> ile değiştirin.
+     ============================================= -->
+<section id="sponsorlar">
+  <div class="section-inner">
+    <div class="section-tag">Destekçiler</div>
+    <h2 class="section-title">Sponsorlar &amp; Destekçiler</h2>
+    <div class="section-line"></div>
+
+    <!-- Ev sahibi üniversite -->
+    <div class="sponsor-ieu-block">
+      <!-- ▶ İEÜ logosu gelince img'yi aktif edin -->
+      <!-- <img class="sponsor-ieu-logo" src="assets/images/ieu-logo.png" alt="İzmir Ekonomi Üniversitesi" /> -->
+      <div style="width:64px; height:64px; background:var(--gold-bg); border:1px dashed var(--border-gold); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.8rem; flex-shrink:0;">🎓</div>
+      <div class="sponsor-ieu-info">
+        <div class="sponsor-ieu-label">Ana Destekçi / Ev Sahibi</div>
+        <div class="sponsor-ieu-name">
+          İzmir Ekonomi Üniversitesi<br>Fizik Bölümü
+        </div>
+      </div>
+    </div>
+
+    <!-- Sponsor grid -->
+    <div class="sponsor-grid">
+
+      <!-- ── Sponsor 1 ──
+           ▶ Logo hazır olunca .sponsor-card-placeholder'ı silin,
+             <img src="assets/images/sponsors/sponsor-adi.png" alt="Sponsor Adı"> ekleyin
+      -->
+      <div class="sponsor-card">
+        <div class="sponsor-card-placeholder">Sponsor Logosu</div>
+        <div class="sponsor-card-name">Sponsor Adı</div>
+      </div>
+
+      <!-- ── Sponsor 2 ── -->
+      <div class="sponsor-card">
+        <div class="sponsor-card-placeholder">Sponsor Logosu</div>
+        <div class="sponsor-card-name">Sponsor Adı</div>
+      </div>
+
+      <!-- ── Sponsor 3 ── -->
+      <div class="sponsor-card">
+        <div class="sponsor-card-placeholder">Sponsor Logosu</div>
+        <div class="sponsor-card-name">Sponsor Adı</div>
+      </div>
+
+      <!-- ── Sponsor 4 ── -->
+      <div class="sponsor-card">
+        <div class="sponsor-card-placeholder">Sponsor Logosu</div>
+        <div class="sponsor-card-name">Sponsor Adı</div>
+      </div>
+
+    </div><!-- /.sponsor-grid -->
+
+    <div class="sponsor-cta">
+      Etkinliği desteklemek veya sponsor olmak için
+      <a href="#iletisim">iletişime geçin</a>.
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =============================================
+     FOOTER
+     ============================================= -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">YMF 2026</div>
+    <div class="footer-host">
+      Yoğun Madde Fiziği İzmir Toplantısı · İzmir Ekonomi Üniversitesi, Fizik Bölümü
+    </div>
+    <div class="footer-links">
+      <a href="#duyuru">Duyuru</a>
+      <a href="#konusmaci">Konuşmacılar</a>
+      <a href="#program">Program</a>
+      <a href="#kayit">Kayıt</a>
+      <a href="#gecmis">Geçmiş YMF</a>
+      <a href="#iletisim">İletişim</a>
+      <a href="#sponsorlar">Sponsorlar</a>
+    </div>
+    <div class="footer-copy">
+      © 2026 YMF – İzmir Ekonomi Üniversitesi Fizik Bölümü
+    </div>
+  </div>
+</footer>
+
+
+<!-- ── Lightbox overlay ── -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Fotoğraf görüntüleyici">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Kapat">✕</button>
+  <img id="lightbox-img" src="" alt="Galeri fotoğrafı" />
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
