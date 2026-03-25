@@ -510,6 +510,57 @@ section { padding: 5rem 2rem; }
 }
 .gallery-more-link:hover { text-decoration: underline; }
 
+/* Photo Carousel */
+.photo-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: #000;
+  aspect-ratio: 16/9;
+  max-height: 480px;
+}
+.photo-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+.photo-slide {
+  flex: 0 0 100%;
+  height: 100%;
+}
+.photo-slide img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block;
+}
+.photo-arrow {
+  position: absolute; top: 50%; z-index: 3;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.85);
+  border: 1px solid var(--border);
+  color: var(--navy); font-size: 1.5rem;
+  width: 42px; height: 42px; border-radius: 50%;
+  cursor: pointer; display: flex; align-items: center;
+  justify-content: center; transition: background 0.2s;
+  line-height: 1;
+}
+.photo-arrow:hover { background: #fff; }
+.photo-prev { left: 1rem; }
+.photo-next { right: 1rem; }
+.photo-dots {
+  position: absolute; bottom: 0.8rem; left: 50%;
+  transform: translateX(-50%);
+  display: flex; gap: 6px; z-index: 3;
+}
+.photo-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  border: none; cursor: pointer; padding: 0;
+  transition: background 0.2s, transform 0.2s;
+}
+.photo-dot.active { background: #fff; transform: scale(1.3); }
+
 /* Lightbox */
 .lightbox {
   display: none; position: fixed; inset: 0; z-index: 1000;
