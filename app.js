@@ -52,11 +52,11 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLight
 
   function goTo(n) {
     slides[current].classList.remove('active');
-    dotsEl.querySelectorAll('.slider-dot').forEach((d, i) =>
-      d.classList.toggle('active', i === n)
-    );
-    current = (n + total) % total;
+    current = ((n % total) + total) % total;
     slides[current].classList.add('active');
+    dotsEl.querySelectorAll('.slider-dot').forEach((d, i) =>
+      d.classList.toggle('active', i === current)
+    );
   }
 
   document.getElementById('slider-prev')?.addEventListener('click', () => { goTo(current - 1); resetTimer(); });
