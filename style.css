@@ -683,9 +683,16 @@ section { padding: 5rem 2rem; }
 
 /* ── FOOTER ──────────────────────────────────────────────── */
 footer {
-  background: var(--navy); padding: 3rem 2rem; text-align: center;
+  position: relative;
+  background: url('assets/images/nanotube.jpg') center/cover no-repeat;
+  padding: 3rem 2rem; text-align: center;
 }
-.footer-inner { max-width: 1080px; margin: 0 auto; }
+footer::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: rgba(13,27,46,0.82);
+}
+.footer-inner { position: relative; z-index: 1; max-width: 1080px; margin: 0 auto; }
 .footer-logo {
   font-family: var(--font-serif); font-size: 1.6rem;
   font-weight: 600; color: var(--gold); margin-bottom: 0.4rem;
