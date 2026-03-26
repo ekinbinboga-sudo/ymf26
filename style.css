@@ -587,8 +587,51 @@ section { padding: 5rem 2rem; }
 }
 .lightbox-close:hover { opacity: 1; }
 
+/* ── KURUL ───────────────────────────────────────────────── */
+#kurul { background: var(--bg); }
+
+.kurul-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.kurul-block {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.8rem;
+  background: var(--bg-alt);
+}
+.kurul-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.2rem; font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 1.1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--gold);
+}
+.kurul-tba {
+  font-size: 0.88rem; color: var(--muted); font-style: italic;
+}
+.kurul-list {
+  list-style: none; display: flex; flex-direction: column; gap: 0.9rem;
+}
+.kurul-list li {
+  display: flex; flex-direction: column; gap: 0.1rem;
+  padding-left: 1rem; position: relative;
+}
+.kurul-list li::before {
+  content: '•'; position: absolute; left: 0;
+  color: var(--gold); font-size: 1rem; line-height: 1.5;
+}
+.kurul-name {
+  font-size: 0.92rem; color: var(--text); font-weight: 500; line-height: 1.4;
+}
+.kurul-aff {
+  font-size: 0.78rem; color: var(--muted);
+}
+
 /* ── İLETİŞİM ────────────────────────────────────────────── */
-#iletisim { background: var(--bg); }
+#iletisim { background: var(--bg-alt); }
 
 .contact-grid {
   display: grid; grid-template-columns: 1fr 1fr;
