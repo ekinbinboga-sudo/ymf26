@@ -1,12 +1,19 @@
-/* Hamburger Menu */
-document.getElementById('hamburger').addEventListener('click', () => {
-  document.getElementById('nav-links').classList.toggle('open');
-});
-document.getElementById('nav-links').querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    document.getElementById('nav-links').classList.remove('open');
-  });
-});
+/* Mobile Sidebar */
+(function () {
+  const hamburger = document.getElementById('hamburger');
+  const sidebar   = document.getElementById('sidebar');
+  const overlay   = document.getElementById('sidebar-overlay');
+  const closeBtn  = document.getElementById('sidebar-close');
+  if (!hamburger || !sidebar) return;
+
+  function openSidebar()  { sidebar.classList.add('open'); overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeSidebar() { sidebar.classList.remove('open'); overlay.classList.remove('open'); document.body.style.overflow = ''; }
+
+  hamburger.addEventListener('click', openSidebar);
+  closeBtn.addEventListener('click', closeSidebar);
+  overlay.addEventListener('click', closeSidebar);
+  sidebar.querySelectorAll('a').forEach(a => a.addEventListener('click', closeSidebar));
+})();
 
 /* Nav Scroll Highlight */
 const observer = new IntersectionObserver(entries => {

@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
 
@@ -20,6 +20,9 @@
     <a class="nav-logo" href="#hero">
       <img class="nav-logo-img" src="assets/images/ymf-logo.png" alt="YMF 2026" />
     </a>
+    <button class="hamburger" id="hamburger" aria-label="Menüyü aç/kapat">
+      <span></span><span></span><span></span>
+    </button>
   </div>
   <div class="nav-bottom">
     <ul class="nav-links" id="nav-links">
@@ -29,15 +32,29 @@
       <li><a href="#program">Program</a></li>
       <li><a href="#kayit">Kayıt</a></li>
       <li><a href="#gecmis">Geçmiş YMF</a></li>
-      <li><a href="#kurul">Kurul</a></li>
+      <li><a href="#kurul">Kurullar</a></li>
       <li><a href="#iletisim">İletişim</a></li>
       <li><a href="#sponsorlar">Sponsorlar</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Menüyü aç/kapat">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </nav>
+
+<!-- MOBILE SIDEBAR -->
+<div id="sidebar-overlay"></div>
+<aside id="sidebar" aria-label="Mobil menü">
+  <button id="sidebar-close" aria-label="Menüyü kapat">✕</button>
+  <ul>
+    <li><a href="#duyuru">Duyuru</a></li>
+    <li><a href="#bildiri">Bildiri</a></li>
+    <li><a href="#konusmaci">Konuşmacılar</a></li>
+    <li><a href="#program">Program</a></li>
+    <li><a href="#kayit">Kayıt</a></li>
+    <li><a href="#gecmis">Geçmiş YMF</a></li>
+    <li><a href="#kurul">Kurullar</a></li>
+    <li><a href="#iletisim">İletişim</a></li>
+    <li><a href="#sponsorlar">Sponsorlar</a></li>
+  </ul>
+</aside>
 
 <!-- HERO SLIDER -->
 <section id="hero">
@@ -325,7 +342,7 @@
 <section id="kurul">
   <div class="section-inner">
     <p class="section-tag">Organizasyon</p>
-    <h2 class="section-title">Kurul</h2>
+    <h2 class="section-title">Kurullar</h2>
     <div class="section-rule"></div>
 
     <div class="kurul-grid">
@@ -338,7 +355,7 @@
       <div class="kurul-block">
         <h3 class="kurul-subtitle">Düzenleme Kurulu</h3>
         <ul class="kurul-list">
-          <li><span class="kurul-name">Prof. Dr. Ramazan Tuğrul SENGER</span><span class="kurul-aff"> (İzmir Ekonomi Üniv.)</span></li>
+          <li><span class="kurul-name">Prof. Dr. Tuğrul SENGER</span><span class="kurul-aff"> (İzmir Ekonomi Üniv.)</span></li>
           <li><span class="kurul-name">Prof. Dr. Uğur TIRNAKLI</span><span class="kurul-aff"> (İzmir Ekonomi Üniv.)</span></li>
           <li><span class="kurul-name">Prof. Dr. Gürsoy Bozkurt AKGÜÇ</span><span class="kurul-aff"> (İzmir Ekonomi Üniv.)</span></li>
           <li><span class="kurul-name">Dr. Öğr. Üyesi Gökhan TORUN</span><span class="kurul-aff"> (İzmir Ekonomi Üniv.)</span></li>
@@ -438,7 +455,7 @@
       <a href="#program">Program</a>
       <a href="#kayit">Kayıt</a>
       <a href="#gecmis">Geçmiş YMF</a>
-      <a href="#kurul">Kurul</a>
+      <a href="#kurul">Kurullar</a>
       <a href="#iletisim">İletişim</a>
       <a href="#sponsorlar">Sponsorlar</a>
     </div>
@@ -452,6 +469,6 @@
   <img id="lightbox-img" src="" alt="Galeri fotoğrafı" />
 </div>
 
-<script src="app.js?v=2"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>
