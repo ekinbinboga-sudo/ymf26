@@ -32,16 +32,15 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLight
 
 /* Hero Slider */
 (function () {
-  const hero   = document.getElementById('hero');
-  if (!hero) return;
-  const slides  = hero.querySelectorAll('.slide');
-  const dotsEl  = document.getElementById('slider-dots');
-  const total   = slides.length;
+  const track  = document.getElementById('hero-track');
+  const dotsEl = document.getElementById('slider-dots');
+  if (!track || !dotsEl) return;
+  const slides = track.querySelectorAll('.slide');
+  const total  = slides.length;
   if (total < 2) return;
   let current = 0;
   let timer;
 
-  /* Build dots */
   slides.forEach((_, i) => {
     const d = document.createElement('button');
     d.className = 'slider-dot' + (i === 0 ? ' active' : '');
@@ -51,9 +50,8 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLight
   });
 
   function goTo(n) {
-    slides[current].classList.remove('active');
     current = ((n % total) + total) % total;
-    slides[current].classList.add('active');
+    track.style.transform = `translateX(-${current * 100}%)`;
     dotsEl.querySelectorAll('.slider-dot').forEach((d, i) =>
       d.classList.toggle('active', i === current)
     );
