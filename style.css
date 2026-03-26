@@ -54,7 +54,7 @@ nav {
 /* Row 1 — Logo */
 .nav-top {
   display: flex; justify-content: center; align-items: center;
-  height: 110px;
+  height: 120px;
   border-bottom: 1px solid var(--border);
 }
 .nav-logo {
@@ -62,7 +62,7 @@ nav {
   text-decoration: none;
 }
 .nav-logo-img {
-  height: 96px; width: auto;
+  height: 108px; width: auto;
   object-fit: contain;
 }
 .nav-logo-text {
@@ -783,8 +783,8 @@ footer::before {
 }
 
 @media (max-width: 768px) {
-  .nav-top { height: 64px; }
-  .nav-logo-img { height: 42px; }
+  .nav-top { height: 76px; }
+  .nav-logo-img { height: 60px; }
   .nav-logo-text { font-size: 1rem; }
   .nav-bottom { height: 0; overflow: hidden; border: none; }
 
