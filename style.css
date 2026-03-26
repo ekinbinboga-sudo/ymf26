@@ -176,7 +176,7 @@ nav {
   transition: background 0.2s, transform 0.15s;
   border: 2px solid var(--gold);
 }
-.btn-primary:hover { background: #b8942a; border-color: #b8942a; transform: translateY(-1px); text-decoration: none; }
+.btn-primary:hover { background: var(--gold-dark); border-color: var(--gold-dark); transform: translateY(-1px); text-decoration: none; }
 
 .btn-outline {
   background: transparent;
@@ -392,11 +392,11 @@ section { padding: 5rem 2rem; }
   letter-spacing: 0.09em; text-transform: uppercase;
   padding: 0.18rem 0.6rem; border-radius: 2px; margin-right: 0.4rem; margin-bottom: 0.25rem;
 }
-.prog-type.davet  { background: #fdf5e0; color: var(--gold-dark); border: 1px solid rgba(244,121,32,0.35); }
+.prog-type.davet  { background: var(--gold-bg); color: var(--gold-dark); border: 1px solid rgba(244,121,32,0.35); }
 .prog-type.sozlu  { background: #eef4fc; color: #1a5fa8;          border: 1px solid #b8d0ed; }
 .prog-type.break  { background: var(--bg-alt); color: var(--muted); border: 1px solid var(--border); }
 .prog-type.poster { background: #edfbf4; color: #1a7a4e;           border: 1px solid #9ad5b8; }
-.prog-type.kapanis{ background: #fdf5e0; color: var(--gold-dark); border: 1px solid rgba(244,121,32,0.35); }
+.prog-type.kapanis{ background: var(--gold-bg); color: var(--gold-dark); border: 1px solid rgba(244,121,32,0.35); }
 
 .prog-note {
   background: #eef4fc; border-left: 3px solid #1a5fa8;
