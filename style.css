@@ -63,6 +63,7 @@ nav {
 }
 .nav-logo-img {
   height: 108px; width: auto;
+  max-width: calc(100% - 80px);
   object-fit: contain;
 }
 .nav-logo-text {
