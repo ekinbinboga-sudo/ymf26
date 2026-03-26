@@ -54,7 +54,7 @@ nav {
 /* Row 1 — Logo */
 .nav-top {
   display: flex; justify-content: center; align-items: center;
-  height: 100px;
+  height: 110px;
   border-bottom: 1px solid var(--border);
 }
 .nav-logo {
@@ -62,7 +62,7 @@ nav {
   text-decoration: none;
 }
 .nav-logo-img {
-  height: 74px; width: auto;
+  height: 96px; width: auto;
   object-fit: contain;
 }
 .nav-logo-text {
