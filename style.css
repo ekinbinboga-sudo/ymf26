@@ -58,7 +58,7 @@ nav {
   display: flex; align-items: center; gap: 0.65rem;
   text-decoration: none;
 }
-.nav-logo-img { height: 46px; width: auto; object-fit: contain; }
+.nav-logo-img { height: 58px; width: auto; object-fit: contain; }
 .nav-logo-text {
   font-family: var(--font-serif);
   font-size: 1.3rem; font-weight: 600;
