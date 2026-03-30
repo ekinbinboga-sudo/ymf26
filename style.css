@@ -60,6 +60,7 @@ nav {
 .nav-logo {
   display: flex; align-items: center; gap: 0.65rem;
   text-decoration: none;
+  margin: auto;
 }
 .nav-logo-img {
   height: 108px; width: auto;
@@ -713,16 +714,11 @@ section { padding: 5rem 2rem; }
 .contact-val { font-size: 0.91rem; color: var(--text); line-height: 1.7; }
 .contact-val a { color: var(--link); text-decoration: none; }
 .contact-val a:hover { text-decoration: underline; }
-.map-placeholder {
-  background: var(--bg-alt); border: 1px solid var(--border);
-  border-radius: var(--radius); min-height: 270px;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  gap: 0.7rem; color: var(--muted); font-size: 0.88rem;
-  text-align: center; padding: 2rem;
-}
-.map-placeholder .map-name {
-  font-family: var(--font-serif); font-size: 1.05rem; color: var(--navy);
+.map-container {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-alt);
 }
 
 /* ── SPONSORLAR ──────────────────────────────────────────── */
