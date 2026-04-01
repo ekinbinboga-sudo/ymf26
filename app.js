@@ -15,6 +15,44 @@
   sidebar.querySelectorAll('a').forEach(a => a.addEventListener('click', closeSidebar));
 })();
 
+/* Smart Hide Navbar on Scroll (Mobile) */
+(function () {
+  const nav = document.getElementById('site-nav');
+  if (!nav) return;
+  let lastScroll = 0;
+  let ticking = false;
+
+  function updateNav() {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    const isMobile = window.innerWidth <= 768;
+
+    if (!isMobile) {
+      nav.classList.remove('nav-hidden');
+      return;
+    }
+
+    if (currentScroll <= 0) {
+      nav.classList.remove('nav-hidden');
+    } else if (currentScroll > lastScroll && currentScroll > 80) {
+      nav.classList.add('nav-hidden');
+    } else if (currentScroll < lastScroll) {
+      nav.classList.remove('nav-hidden');
+    }
+
+    lastScroll = currentScroll;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateNav);
+      ticking = true;
+    }
+  });
+
+  window.addEventListener('resize', updateNav);
+})();
+
 /* Nav Scroll Highlight */
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
