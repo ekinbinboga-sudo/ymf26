@@ -415,6 +415,31 @@ section { padding: 5rem 2rem; }
 }
 .speaker-card:hover { border-color: var(--gold); }
 
+.speaker-card-link {
+  text-decoration: none;
+  display: block;
+}
+.speaker-card-link .speaker-card {
+  cursor: pointer;
+  position: relative;
+}
+.speaker-card-link .speaker-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13,27,46,0.15);
+}
+
+.speaker-pdf-badge {
+  display: inline-block;
+  background: var(--gold);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
 .speaker-avatar {
   width: 68px; height: 68px; border-radius: 50%;
   background: linear-gradient(135deg, var(--navy2), var(--gold));
