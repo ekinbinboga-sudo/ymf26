@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <circle cx="40" cy="40" r="36" fill="none" stroke="#f47920" stroke-width="2"/>
+  <text x="40" y="47" text-anchor="middle"
+        font-family="Georgia, serif" font-size="18" font-weight="600"
+        fill="#0d1b2e" letter-spacing="1">YMF</text>
+</svg>
