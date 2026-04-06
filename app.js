@@ -24,12 +24,6 @@
 
   function updateNav() {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    const isMobile = window.innerWidth <= 768;
-
-    if (!isMobile) {
-      nav.classList.remove('nav-hidden');
-      return;
-    }
 
     if (currentScroll <= 0) {
       nav.classList.remove('nav-hidden');
