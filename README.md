@@ -294,7 +294,7 @@ http://localhost:8000
 
 © 2026 YMF – İzmir Ekonomi Üniversitesi Fizik Bölümü
 
-Akademik amaçlı, Atatürk Üniversitesi, Bilkent Üniversitesi, ODTÜ, Sabancı Üniversitesi, Adnan Menderes Üniversitesi, Hacettepe Üniversitesi, İzmir Katip Çelebi Üniversitesi, İzmir Ekonomi Üniversitesi işbirliğinde.
+
 
 ---
 
