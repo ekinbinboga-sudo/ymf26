@@ -850,6 +850,59 @@ footer::before {
 .footer-links a:hover { color: var(--gold); }
 .footer-copy { font-size: 0.73rem; color: rgba(255,255,255,0.22); }
 
+/* ── ACCORDION ───────────────────────────────────────────── */
+.kurul-accordion { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.kurul-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+
+.kurul-toggle {
+  width: 100%; display: flex; align-items: center; justify-content: space-between;
+  padding: 1.1rem 1.6rem;
+  background: none; border: none; border-bottom: 2px solid transparent;
+  cursor: pointer; text-align: left;
+  font-family: var(--font-serif); font-size: 1.2rem; font-weight: 600; color: var(--navy);
+  transition: background 0.15s, border-color 0.15s;
+}
+.kurul-toggle:hover { background: #eef1f7; }
+.kurul-toggle[aria-expanded="true"] { border-bottom-color: var(--gold); }
+
+.kurul-body {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.kurul-body .kurul-list { padding: 1.2rem 1.6rem 1.5rem; }
+
+.accord-toggle {
+  width: 100%; display: flex; align-items: center; justify-content: space-between;
+  padding: 1rem 1.4rem; margin-top: 1.2rem;
+  background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+  cursor: pointer; text-align: left;
+  font-family: var(--font-serif); font-size: 1.15rem; font-weight: 600; color: var(--navy);
+  transition: background 0.15s, border-color 0.15s;
+}
+.accord-toggle:hover { background: #eef1f7; border-color: var(--gold); }
+.accord-toggle[aria-expanded="true"] { border-color: var(--gold); }
+
+.accord-body {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.accord-chevron {
+  display: inline-block; flex-shrink: 0;
+  width: 0.6em; height: 0.6em;
+  border-right: 2px solid var(--gold-dark);
+  border-bottom: 2px solid var(--gold-dark);
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  margin-left: 1rem; margin-bottom: 0.15em;
+}
+
 /* ── ANIMATIONS ──────────────────────────────────────────── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(22px); }

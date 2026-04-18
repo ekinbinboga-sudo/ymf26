@@ -1,3 +1,27 @@
+/* Accordion */
+(function () {
+  function initAccordion(toggleSel, bodySel) {
+    document.querySelectorAll(toggleSel).forEach(btn => {
+      btn.addEventListener('click', () => {
+        const body = document.getElementById(btn.getAttribute('aria-controls'));
+        if (!body) return;
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        const chevron = btn.querySelector('.accord-chevron');
+        if (!isOpen) {
+          body.style.maxHeight = body.scrollHeight + 'px';
+          if (chevron) chevron.style.transform = 'rotate(-135deg)';
+        } else {
+          body.style.maxHeight = '0';
+          if (chevron) chevron.style.transform = 'rotate(45deg)';
+        }
+      });
+    });
+  }
+  initAccordion('.kurul-toggle', '.kurul-body');
+  initAccordion('.accord-toggle', '.accord-body');
+})();
+
 /* Mobile Sidebar */
 (function () {
   const hamburger = document.getElementById('hamburger');
