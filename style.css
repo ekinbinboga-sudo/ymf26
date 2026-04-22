@@ -450,8 +450,12 @@ section { padding: 5rem 2rem; }
   font-weight: 600;
   padding: 2px 5px;
   border-radius: 3px;
-  margin-top: 0.3rem;
+  margin-top: auto;
   letter-spacing: 0.05em;
+}
+.speaker-pdf-empty {
+  visibility: hidden;
+  margin-top: auto;
 }
 
 .speaker-avatar {
