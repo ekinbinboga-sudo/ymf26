@@ -420,16 +420,15 @@ section { padding: 5rem 2rem; }
   padding: 0.8rem 1rem;
   text-align: center;
   transition: border-color 0.2s;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 180px;
 }
 .speaker-card:hover { border-color: var(--gold); }
 
 .speaker-card-link {
   text-decoration: none;
   display: flex;
-  height: 100%;
 }
 .speaker-card-link > .speaker-card {
   cursor: pointer;
@@ -472,7 +471,12 @@ section { padding: 5rem 2rem; }
   font-size: 0.95rem; color: var(--navy);
   font-weight: 600; margin-bottom: 0.15rem;
 }
-.speaker-aff { font-size: 0.72rem; color: var(--muted); }
+.speaker-aff {
+  font-size: 0.72rem;
+  color: var(--muted);
+  min-height: 32px;
+  margin-bottom: 0.3rem;
+}
 .speaker-tba { font-size: 0.78rem; color: var(--muted); margin-top: 0.4rem; font-style: italic; }
 
 /* ── PROGRAM ─────────────────────────────────────────────── */
