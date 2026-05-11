@@ -166,6 +166,7 @@ nav.nav-hidden {
   width: 100%;
   color: var(--navy);
 }
+.sidebar-theme-toggle svg { stroke: var(--navy); }
 [data-theme="dark"] .sidebar-theme-toggle { color: #e8e8e8; border-color: #3a3a5a; }
 [data-theme="dark"] .sidebar-theme-toggle svg { stroke: #e8e8e8; }
 
