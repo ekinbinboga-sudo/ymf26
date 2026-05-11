@@ -43,8 +43,14 @@
   --gold-bg:     #2a2a4a;
 }
 
+[data-theme="dark"] .accord-toggle { background: #1a1a2e !important; color: #e8e8e8 !important; border-color: #3a3a5a; }
+[data-theme="dark"] .accord-toggle:hover { background: #2a2a4a !important; }
 [data-theme="dark"] .prog-row:hover { background: #2a2a4a; }
 [data-theme="dark"] .prog-row.break-row:hover { background: #252540; }
+[data-theme="dark"] .kurul-toggle:hover { background: #2a2a4a; }
+[data-theme="dark"] .nav-links a:hover { color: var(--gold); }
+[data-theme="dark"] .gecmis-card:hover { background: #2a2a4a; }
+[data-theme="dark"] .sponsor-logo-card:hover { background: #252540; }
 [data-theme="dark"] .accord-toggle { background: var(--bg); color: var(--text); }
 [data-theme="dark"] .accord-toggle:hover { background: #2a2a4a; }
 [data-theme="dark"] .prog-row:hover { background: #2a2a4a; }
