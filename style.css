@@ -43,10 +43,15 @@
   --gold-bg:     #2a2a4a;
 }
 
+[data-theme="dark"] #site-nav { background: #1a1a2e; }
+[data-theme="dark"] #sidebar { background: #1a1a2e; }
+[data-theme="dark"] #sidebar-overlay { background: rgba(0,0,0,0.6); }
+[data-theme="dark"] #sidebar ul li a { color: #e8e8e8; border-color: #3a3a5a; }
+[data-theme="dark"] #sidebar-close { color: #e8e8e8; }
 [data-theme="dark"] .accord-toggle { background: #1a1a2e !important; color: #e8e8e8 !important; border-color: #3a3a5a; }
 [data-theme="dark"] .accord-toggle:hover { background: #2a2a4a !important; }
-[data-theme="dark"] .download-btn { background: #0f3460 !important; color: #fff !important; }
-[data-theme="dark"] .download-btn:hover { background: #1a4a80 !important; }
+[data-theme="dark"] .download-btn { background: #0d1b2e !important; color: #fff !important; }
+[data-theme="dark"] .download-btn:hover { background: #1a2e4a !important; }
 [data-theme="dark"] .prog-row:hover { background: #2a2a4a; }
 [data-theme="dark"] .prog-row.break-row:hover { background: #252540; }
 [data-theme="dark"] .kurul-toggle:hover { background: #2a2a4a; }
