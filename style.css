@@ -159,19 +159,12 @@ nav.nav-hidden {
 .sidebar-theme-toggle {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  justify-content: center;
   margin-top: 1.5rem;
-  padding: 0.9rem 0.6rem;
+  padding: 0.9rem;
   border-top: 1px solid var(--border);
   width: 100%;
-  font-size: 0.85rem;
   color: var(--navy);
-  text-align: left;
-}
-.sidebar-theme-toggle .theme-label { 
-  font-family: var(--font-sans); 
-  font-weight: 500; 
-  letter-spacing: 0.05em; 
 }
 [data-theme="dark"] .sidebar-theme-toggle { color: #e8e8e8; border-color: #3a3a5a; }
 [data-theme="dark"] .sidebar-theme-toggle svg { stroke: #e8e8e8; }
