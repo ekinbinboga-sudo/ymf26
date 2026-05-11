@@ -43,7 +43,10 @@
   --gold-bg:     #2a2a4a;
 }
 
-[data-theme="dark"] #site-nav { background: #1a1a2e; }
+[data-theme="dark"] .nav-top { background: #fff; }
+[data-theme="dark"] .nav-bottom { background: #16213e; }
+[data-theme="dark"] .nav-links a { color: #e8e8e8; }
+[data-theme="dark"] .nav-links a:hover { color: var(--gold); }
 [data-theme="dark"] #sidebar { background: #1a1a2e; }
 [data-theme="dark"] #sidebar-overlay { background: rgba(0,0,0,0.6); }
 [data-theme="dark"] #sidebar ul li a { color: #e8e8e8; border-color: #3a3a5a; }
@@ -55,15 +58,6 @@
 [data-theme="dark"] .prog-row:hover { background: #2a2a4a; }
 [data-theme="dark"] .prog-row.break-row:hover { background: #252540; }
 [data-theme="dark"] .kurul-toggle:hover { background: #2a2a4a; }
-[data-theme="dark"] .nav-links a:hover { color: var(--gold); }
-[data-theme="dark"] .gecmis-card:hover { background: #2a2a4a; }
-[data-theme="dark"] .sponsor-logo-card:hover { background: #252540; }
-[data-theme="dark"] .accord-toggle { background: var(--bg); color: var(--text); }
-[data-theme="dark"] .accord-toggle:hover { background: #2a2a4a; }
-[data-theme="dark"] .prog-row:hover { background: #2a2a4a; }
-[data-theme="dark"] .prog-row.break-row:hover { background: #252540; }
-[data-theme="dark"] .kurul-toggle:hover { background: #2a2a4a; }
-[data-theme="dark"] .nav-links a:hover { color: var(--gold); }
 [data-theme="dark"] .gecmis-card:hover { background: #2a2a4a; }
 [data-theme="dark"] .sponsor-logo-card:hover { background: #252540; }
 
@@ -165,16 +159,22 @@ nav.nav-hidden {
 .sidebar-theme-toggle {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.6rem;
   margin-top: 1.5rem;
-  padding: 0.8rem 0.4rem;
+  padding: 0.9rem 0.6rem;
   border-top: 1px solid var(--border);
   width: 100%;
   font-size: 0.85rem;
   color: var(--navy);
+  text-align: left;
 }
-.sidebar-theme-toggle .theme-label { font-family: var(--font-sans); font-weight: 500; letter-spacing: 0.05em; }
+.sidebar-theme-toggle .theme-label { 
+  font-family: var(--font-sans); 
+  font-weight: 500; 
+  letter-spacing: 0.05em; 
+}
 [data-theme="dark"] .sidebar-theme-toggle { color: #e8e8e8; border-color: #3a3a5a; }
+[data-theme="dark"] .sidebar-theme-toggle svg { stroke: #e8e8e8; }
 
 @media (max-width: 768px) {
   .theme-toggle:not(.sidebar-theme-toggle) { display: none; }
