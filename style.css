@@ -162,8 +162,22 @@ nav.nav-hidden {
 [data-theme="dark"] .theme-icon-light { display: none; }
 [data-theme="dark"] .theme-icon-dark { display: inline; }
 
+.sidebar-theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+  padding: 0.8rem 0.4rem;
+  border-top: 1px solid var(--border);
+  width: 100%;
+  font-size: 0.85rem;
+  color: var(--navy);
+}
+.sidebar-theme-toggle .theme-label { font-family: var(--font-sans); font-weight: 500; letter-spacing: 0.05em; }
+[data-theme="dark"] .sidebar-theme-toggle { color: #e8e8e8; border-color: #3a3a5a; }
+
 @media (max-width: 768px) {
-  .theme-toggle { right: 3.5rem; }
+  .theme-toggle:not(.sidebar-theme-toggle) { display: none; }
 }
 
 /* ── MOBILE SIDEBAR ──────────────────────────────────────── */
