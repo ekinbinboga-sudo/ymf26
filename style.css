@@ -904,6 +904,7 @@ footer::before {
 .accord-body > .gecmis-grid { margin-top: 1.2rem; }
 .accord-body > .gallery-section { margin-top: 0; }
 .accord-body > .bildiri-grid { margin-top: 1.2rem; }
+.accord-body > .program-timeline { margin-top: 1.2rem; }
 
 .accord-chevron {
   display: inline-block; flex-shrink: 0;
