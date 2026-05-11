@@ -45,7 +45,10 @@
 
 [data-theme="dark"] .prog-row:hover { background: #2a2a4a; }
 [data-theme="dark"] .prog-row.break-row:hover { background: #252540; }
+[data-theme="dark"] .accord-toggle { background: var(--bg); color: var(--text); }
 [data-theme="dark"] .accord-toggle:hover { background: #2a2a4a; }
+[data-theme="dark"] .prog-row:hover { background: #2a2a4a; }
+[data-theme="dark"] .prog-row.break-row:hover { background: #252540; }
 [data-theme="dark"] .kurul-toggle:hover { background: #2a2a4a; }
 [data-theme="dark"] .nav-links a:hover { color: var(--gold); }
 [data-theme="dark"] .gecmis-card:hover { background: #2a2a4a; }
