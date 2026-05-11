@@ -3,6 +3,7 @@
 Akademik etkinlik için tasarlanmış, iyiye ayarlanmış ve responsive bir landing page. İzmir Ekonomi Üniversitesi Fizik Bölümü tarafından organize edilen yoğun madde fiziği sempozyumunun resmi websitesi.
 
 **Live:** https://ekinbinboga-sudo.github.io/ymf26/
+          https://physics.ieu.edu.tr/ymf2026/
 
 ---
 
