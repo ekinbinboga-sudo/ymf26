@@ -1,22 +1,3 @@
-/* Theme Toggle (Dark/Light) */
-(function () {
-  const savedTheme = localStorage.getItem('theme') || 'light';
-  
-  if (savedTheme === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-  }
-  
-  document.querySelectorAll('.theme-toggle').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-    });
-  });
-})();
-
 /* Accordion */
 (function () {
   function initAccordion(toggleSel, bodySel) {
