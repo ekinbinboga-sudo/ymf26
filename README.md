@@ -63,7 +63,6 @@ ymf26/
 11. **Sponsorlar** — Eduline, İYTE-AVILAR
 
 ### Teknik Özellikler
-- **Dark/Light Mode** — Theme toggle with localStorage
 - **Accordion Pattern** — Kurullar, Geçmiş, Program, Bildiri
 - **Responsive** — Desktop, tablet, mobile optimized
 - **Smart Navbar** — Hide on scroll down, show on scroll up
@@ -80,15 +79,6 @@ ymf26/
 | Fadıl İYİKANAT | Dokuz Eylül Üniversitesi |
 | Göktuğ KARPAT | Sabancı Üniversitesi |
 | Ramazan ŞAHİN | Atatürk Üniversitesi |
-
----
-
-## 🌙 Dark Mode
-
-Website dark/light tema destekler:
-- **Toggle:** Nav'da icon (desktop), sidebar'da icon (mobile)
-- **localStorage:** Tercih kaydedilir
-- **Colors:** Dark theme — `#1a1a2e` background, `#e8e8e8` text
 
 ---
 
@@ -131,7 +121,7 @@ http://localhost:8000
 |--------|-------|----------|
 | Desktop | >768px | Full nav, 3-column kurullar |
 | Tablet | 768px | Hamburger menu, 2-column |
-| Mobile | <768px | Sidebar, 1-column, theme toggle in sidebar |
+| Mobile | <768px | Sidebar, 1-column |
 
 ---
 
